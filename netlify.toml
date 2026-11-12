@@ -1,0 +1,11 @@
+# The Vite app lives in a subdirectory of this repository.
+[build]
+  base = "pragadeeshan-portfolio"
+  command = "npm install --include=dev && npm run build"
+  publish = "dist"
+
+# Single-page app fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
