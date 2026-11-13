@@ -1,0 +1,8 @@
+[build]
+  # The app (package.json, Vite config, sources) lives in this subfolder.
+  base = "pragadeeshan-portfolio"
+  # Install dependencies first so `vite` is available even when the build
+  # environment hasn't installed them (e.g. CLI-driven deploys).
+  command = "npm install --include=dev && npm run build"
+  # Relative to the base directory.
+  publish = "dist"
